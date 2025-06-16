@@ -1,0 +1,159 @@
+---
+---
+
+<section id="about" class="section about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text fade-in">
+        <div class="section-title">
+          <h2>Tentang Mizzlady Aesthetic</h2>
+          <p>Pengalaman Kecantikan Yang Menyeluruh</p>
+        </div>
+        
+        <div class="about-description">
+          <p>Mizzlady Aesthetic adalah medispa profesional yang beroperasi untuk membantu pelanggan tampil lebih cantik, sihat dan yakin. Kami menawarkan rawatan kecantikan berasaskan teknologi terkini dengan sentuhan mesra pelanggan.</p>
+          
+          <p>Dengan pengalaman bertahun-tahun dalam industri kecantikan, kami komited untuk memberikan perkhidmatan terbaik yang disesuaikan dengan keperluan unik setiap pelanggan. Tim ahli kami terdiri daripada profesional berpengalaman yang sentiasa mengutamakan keselamatan dan kepuasan pelanggan.</p>
+          
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-award"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Profesional Berpengalaman</h4>
+                <p>Tim ahli dengan pengalaman bertahun-tahun</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Teknologi Terkini</h4>
+                <p>Peralatan dan teknik terdepan dalam industri</p>
+              </div>
+            </div>
+            
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Rawatan Selamat</h4>
+                <p>Mengutamakan keselamatan dan kepuasan pelanggan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-image fade-in">
+        <img src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop" alt="Spa Treatment Room" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about {
+    background: var(--beige);
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .about-description p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-features {
+    margin-top: 2rem;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .feature-icon {
+    background: linear-gradient(45deg, var(--accent-rose), #ff6b9d);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  
+  .feature-content h4 {
+    color: var(--accent-rose);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .feature-content p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .about-image {
+    position: relative;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+  }
+  
+  .about-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, var(--primary-pink), var(--secondary-peach));
+    border-radius: 20px;
+    z-index: -1;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .about-image {
+      order: -1;
+    }
+    
+    .about-image img {
+      height: 300px;
+    }
+    
+    .feature {
+      gap: 0.8rem;
+    }
+    
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+  }
+</style>

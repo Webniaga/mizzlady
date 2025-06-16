@@ -1,0 +1,232 @@
+---
+---
+
+<section id="gallery" class="section gallery">
+  <div class="container">
+    <div class="section-title fade-in">
+      <h2>Galeri Kami</h2>
+      <p>Lihat suasana medispa dan hasil rawatan kami</p>
+    </div>
+    
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in">
+        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Facial Treatment" />
+        <div class="gallery-overlay">
+          <h4>Facial Treatment</h4>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in">
+        <img src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Treatment Room" />
+        <div class="gallery-overlay">
+          <h4>Treatment Room</h4>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in">
+        <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Spa Bridal" />
+        <div class="gallery-overlay">
+          <h4>Spa Bridal</h4>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in">
+        <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Relaxation Area" />
+        <div class="gallery-overlay">
+          <h4>Relaxation Area</h4>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in">
+        <img src="https://images.pexels.com/photos/3985327/pexels-photo-3985327.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Aesthetic Treatment" />
+        <div class="gallery-overlay">
+          <h4>Aesthetic Treatment</h4>
+        </div>
+      </div>
+      
+      <div class="gallery-item fade-in">
+        <img src="https://images.pexels.com/photos/7755168/pexels-photo-7755168.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Slimming Program" />
+        <div class="gallery-overlay">
+          <h4>Slimming Program</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-caption"></div>
+  </div>
+</div>
+
+<style>
+  .gallery {
+    background: var(--beige);
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem 1.5rem 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+  }
+  
+  .gallery-overlay h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  /* Lightbox Styles */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .lightbox-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2001;
+  }
+  
+  .lightbox-close:hover {
+    color: var(--accent-rose);
+  }
+  
+  #lightbox-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .lightbox-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    
+    .gallery-item img {
+      height: 200px;
+    }
+    
+    .lightbox-content {
+      width: 95%;
+    }
+    
+    .lightbox-close {
+      font-size: 35px;
+      top: -35px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+    
+    galleryItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const img = this.querySelector('img');
+        const caption = this.querySelector('h4').textContent;
+        
+        lightboxImg.src = img.src;
+        lightboxCaption.textContent = caption;
+        lightbox.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    closeBtn?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', function(e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+    
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+    
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  });
+</script>

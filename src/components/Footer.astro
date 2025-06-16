@@ -1,0 +1,196 @@
+---
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h3>Mizzlady Aesthetic</h3>
+        <p>Pusat Medispa Profesional untuk kecantikan dan kesihatan anda. Tampil cantik, berseri & yakin bersama kami.</p>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/60182171800" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Pautan Pantas</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-services">
+        <h4>Perkhidmatan</h4>
+        <ul>
+          <li>Facial Treatment</li>
+          <li>Spa Bridal</li>
+          <li>Slimming Program</li>
+          <li>Aesthetic Treatment</li>
+          <li>Konsultasi Percuma</li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h4>Hubungi Kami</h4>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>018-2171800</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@mizzladyaesthetic.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Seremban, Negeri Sembilan</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-divider"></div>
+      <p>&copy; 2025 Mizzlady Aesthetic. Semua hak terpelihara.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: linear-gradient(135deg, var(--text-dark), #1a1a1a);
+    color: white;
+    padding: 3rem 0 1rem;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-brand h3 {
+    color: var(--accent-rose);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .footer-brand p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #cccccc;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-rose);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    background: var(--gold);
+    transform: translateY(-2px);
+  }
+  
+  .footer-links h4,
+  .footer-services h4,
+  .footer-contact h4 {
+    color: var(--accent-rose);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-links ul,
+  .footer-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li,
+  .footer-services ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: var(--accent-rose);
+  }
+  
+  .footer-services ul li {
+    color: #cccccc;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #cccccc;
+  }
+  
+  .contact-item i {
+    color: var(--accent-rose);
+    width: 20px;
+  }
+  
+  .footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-rose), transparent);
+    margin: 2rem 0 1rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    color: #999999;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+    
+    .footer-social {
+      justify-content: center;
+    }
+    
+    .footer {
+      padding: 2rem 0 1rem;
+    }
+  }
+</style>

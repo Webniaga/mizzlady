@@ -1,0 +1,140 @@
+---
+---
+
+<section id="home" class="hero">
+  <div class="hero-background">
+    <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Facial Treatment" />
+  </div>
+  
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-text fade-in">
+        <h1>Cantik, Berseri & Yakin<br>Bersama <span class="highlight">Mizzlady Aesthetic</span></h1>
+        <p class="hero-subtitle">Pusat Medispa Profesional untuk Facial, Spa Bridal, Slimming dan Servis Aesthetic</p>
+        <div class="hero-cta">
+          <a href="https://wa.me/60182171800" class="btn btn-lg" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+            Tempah Sekarang di WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  .hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(248, 215, 218, 0.8), rgba(252, 228, 220, 0.7));
+    z-index: -1;
+  }
+  
+  .hero-content {
+    width: 100%;
+  }
+  
+  .hero-text {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+  }
+  
+  .highlight {
+    color: var(--accent-rose);
+    background: linear-gradient(45deg, var(--accent-rose), #ff6b9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+  }
+  
+  .hero-cta {
+    margin-top: 2rem;
+  }
+  
+  .btn-lg {
+    padding: 18px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+  .btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      height: 80vh;
+      min-height: 500px;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1.1rem;
+    }
+    
+    .btn-lg {
+      padding: 15px 25px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+</style>
