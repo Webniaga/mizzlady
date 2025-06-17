@@ -91,7 +91,7 @@
   
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
   }
@@ -171,6 +171,7 @@
   @media (max-width: 768px) {
     .services-grid {
       grid-template-columns: 1fr;
+      gap: 1.5rem;
     }
     
     .service-card {
@@ -179,6 +180,22 @@
     
     .services-cta {
       padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      padding: 1.5rem;
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+    
+    .service-content h3 {
+      font-size: 1.3rem;
     }
   }
 </style>
