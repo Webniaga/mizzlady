@@ -68,6 +68,83 @@
       </div>
     </div>
     
+    <!-- Booking Form Section -->
+    <div class="booking-form-section fade-in">
+      <div class="booking-form-container">
+        <h3>Semak Tarikh & Tempah</h3>
+        <p>Isi maklumat di bawah dan kami akan hubungi anda melalui WhatsApp</p>
+        
+        <form id="bookingForm" class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Penuh *</label>
+              <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-group">
+              <label for="telefon">No. Telefon *</label>
+              <input type="tel" id="telefon" name="telefon" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="umur">Umur</label>
+              <input type="number" id="umur" name="umur" min="16" max="80">
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="perkhidmatan">Perkhidmatan Yang Diminati *</label>
+              <select id="perkhidmatan" name="perkhidmatan" required>
+                <option value="">Pilih Perkhidmatan</option>
+                <option value="Facial Treatment">Facial Treatment</option>
+                <option value="Spa Bridal">Spa Bridal</option>
+                <option value="Slimming Program">Slimming Program</option>
+                <option value="Aesthetic Treatment">Aesthetic Treatment</option>
+                <option value="Konsultasi Percuma">Konsultasi Percuma</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tarikh">Tarikh Pilihan</label>
+              <input type="date" id="tarikh" name="tarikh">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="masa">Masa Pilihan</label>
+            <select id="masa" name="masa">
+              <option value="">Pilih Masa</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="11:00 AM">11:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="1:00 PM">1:00 PM</option>
+              <option value="2:00 PM">2:00 PM</option>
+              <option value="3:00 PM">3:00 PM</option>
+              <option value="4:00 PM">4:00 PM</option>
+              <option value="5:00 PM">5:00 PM</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="7:00 PM">7:00 PM</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="catatan">Catatan Tambahan</label>
+            <textarea id="catatan" name="catatan" rows="4" placeholder="Sebarang maklumat tambahan atau soalan..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-form">
+            <i class="fab fa-whatsapp"></i>
+            Hantar ke WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+    
     <div class="contact-social fade-in">
       <h3>Ikuti Kami</h3>
       <div class="social-links">
@@ -195,6 +272,93 @@
     text-decoration: underline;
   }
   
+  /* Booking Form Styles */
+  .booking-form-section {
+    margin: 4rem 0 3rem;
+  }
+  
+  .booking-form-container {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .booking-form-container h3 {
+    color: var(--accent-rose);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .booking-form-container > p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-rose);
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .btn-form {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  
+  .btn-form i {
+    margin-right: 10px;
+  }
+  
   .contact-social {
     text-align: center;
     background: var(--white);
@@ -261,6 +425,15 @@
       padding: 2rem;
     }
     
+    .booking-form-container {
+      padding: 2rem;
+    }
+    
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
     .social-links {
       gap: 1rem;
     }
@@ -271,4 +444,99 @@
       font-size: 1.2rem;
     }
   }
+  
+  @media (max-width: 480px) {
+    .booking-form-container {
+      padding: 1.5rem;
+    }
+    
+    .booking-form-container h3 {
+      font-size: 1.6rem;
+    }
+    
+    .social-links {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const bookingForm = document.getElementById('bookingForm');
+    
+    // Set minimum date to today
+    const today = new Date().toISOString().split('T')[0];
+    const tarikhInput = document.getElementById('tarikh');
+    if (tarikhInput) {
+      tarikhInput.setAttribute('min', today);
+    }
+    
+    bookingForm?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = {};
+      
+      for (let [key, value] of formData.entries()) {
+        data[key] = value;
+      }
+      
+      // Validate required fields
+      if (!data.nama || !data.telefon || !data.perkhidmatan) {
+        alert('Sila isi semua maklumat yang diperlukan (bertanda *)');
+        return;
+      }
+      
+      // Format WhatsApp message
+      let message = `*TEMPAHAN BARU - MIZZLADY AESTHETIC*\n\n`;
+      message += `👤 *Nama:* ${data.nama}\n`;
+      message += `📱 *Telefon:* ${data.telefon}\n`;
+      
+      if (data.email) {
+        message += `📧 *Email:* ${data.email}\n`;
+      }
+      
+      if (data.umur) {
+        message += `🎂 *Umur:* ${data.umur} tahun\n`;
+      }
+      
+      message += `💆‍♀️ *Perkhidmatan:* ${data.perkhidmatan}\n`;
+      
+      if (data.tarikh) {
+        const date = new Date(data.tarikh);
+        const formattedDate = date.toLocaleDateString('ms-MY', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+        message += `📅 *Tarikh Pilihan:* ${formattedDate}\n`;
+      }
+      
+      if (data.masa) {
+        message += `⏰ *Masa Pilihan:* ${data.masa}\n`;
+      }
+      
+      if (data.catatan) {
+        message += `📝 *Catatan:* ${data.catatan}\n`;
+      }
+      
+      message += `\n✨ Terima kasih kerana memilih Mizzlady Aesthetic!`;
+      
+      // Encode message for WhatsApp URL
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/60182171800?text=${encodedMessage}`;
+      
+      // Open WhatsApp
+      window.open(whatsappURL, '_blank');
+      
+      // Reset form
+      this.reset();
+      
+      // Show success message
+      alert('Maklumat tempahan telah dihantar ke WhatsApp. Terima kasih!');
+    });
+  });
+</script>
