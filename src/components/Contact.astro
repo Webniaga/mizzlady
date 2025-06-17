@@ -8,130 +8,148 @@
       <p>Klik butang di bawah untuk terus WhatsApp kami dan dapatkan slot anda hari ini!</p>
     </div>
 
-    
-        <!-- Booking Form Section - Now positioned right after the main CTA -->
-    <div class="booking-form-section fade-in">
-      <div class="booking-form-container">
-        <h3>Semak Tarikh & Tempah</h3>
-        <p>Isi maklumat di bawah dan kami akan hubungi anda melalui WhatsApp</p>
-        
-        <form id="bookingForm" class="booking-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nama">Nama Penuh *</label>
-              <input type="text" id="nama" name="nama" required>
-            </div>
-            <div class="form-group">
-              <label for="telefon">No. Telefon *</label>
-              <input type="tel" id="telefon" name="telefon" required>
-            </div>
-          </div>
+    <!-- Main Contact Content - Form and Contact Info Side by Side -->
+    <div class="contact-content fade-in">
+      <!-- Booking Form Section -->
+      <div class="booking-form-section">
+        <div class="booking-form-container">
+          <h3>Semak Tarikh & Tempah</h3>
+          <p>Isi maklumat di bawah dan kami akan hubungi anda melalui WhatsApp</p>
           
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+          <form id="bookingForm" class="booking-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nama">Nama Penuh *</label>
+                <input type="text" id="nama" name="nama" required>
+              </div>
+              <div class="form-group">
+                <label for="telefon">No. Telefon *</label>
+                <input type="tel" id="telefon" name="telefon" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="umur">Umur</label>
-              <input type="number" id="umur" name="umur" min="16" max="80">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="umur">Umur</label>
+                <input type="number" id="umur" name="umur" min="16" max="80">
+              </div>
             </div>
-          </div>
-          
-          <div class="form-row">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="perkhidmatan">Perkhidmatan Yang Diminati *</label>
+                <select id="perkhidmatan" name="perkhidmatan" required>
+                  <option value="">Pilih Perkhidmatan</option>
+                  <option value="Facial Treatment">Facial Treatment</option>
+                  <option value="Spa Bridal">Spa Bridal</option>
+                  <option value="Slimming Program">Slimming Program</option>
+                  <option value="Aesthetic Treatment">Aesthetic Treatment</option>
+                  <option value="Konsultasi Percuma">Konsultasi Percuma</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tarikh">Tarikh Pilihan</label>
+                <input type="date" id="tarikh" name="tarikh">
+              </div>
+            </div>
+            
             <div class="form-group">
-              <label for="perkhidmatan">Perkhidmatan Yang Diminati *</label>
-              <select id="perkhidmatan" name="perkhidmatan" required>
-                <option value="">Pilih Perkhidmatan</option>
-                <option value="Facial Treatment">Facial Treatment</option>
-                <option value="Spa Bridal">Spa Bridal</option>
-                <option value="Slimming Program">Slimming Program</option>
-                <option value="Aesthetic Treatment">Aesthetic Treatment</option>
-                <option value="Konsultasi Percuma">Konsultasi Percuma</option>
+              <label for="masa">Masa Pilihan</label>
+              <select id="masa" name="masa">
+                <option value="">Pilih Masa</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
               </select>
             </div>
+            
             <div class="form-group">
-              <label for="tarikh">Tarikh Pilihan</label>
-              <input type="date" id="tarikh" name="tarikh">
+              <label for="catatan">Catatan Tambahan</label>
+              <textarea id="catatan" name="catatan" rows="4" placeholder="Sebarang maklumat tambahan atau soalan..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-form">
+              <i class="fab fa-whatsapp"></i>
+              Hantar ke WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Contact Info Section -->
+      <div class="contact-info-section">
+        <div class="contact-cta">
+          <div class="cta-box">
+            <div class="cta-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp Terus</h3>
+            <p>Untuk tempahan segera atau sebarang pertanyaan</p>
+            <a href="https://wa.me/60182171800" class="btn" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+              Terus ke WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <h4>Telefon</h4>
+              <p><a href="tel:60182171800">018-2171800</a></p>
             </div>
           </div>
           
-          <div class="form-group">
-            <label for="masa">Masa Pilihan</label>
-            <select id="masa" name="masa">
-              <option value="">Pilih Masa</option>
-              <option value="10:00 AM">10:00 AM</option>
-              <option value="11:00 AM">11:00 AM</option>
-              <option value="12:00 PM">12:00 PM</option>
-              <option value="1:00 PM">1:00 PM</option>
-              <option value="2:00 PM">2:00 PM</option>
-              <option value="3:00 PM">3:00 PM</option>
-              <option value="4:00 PM">4:00 PM</option>
-              <option value="5:00 PM">5:00 PM</option>
-              <option value="6:00 PM">6:00 PM</option>
-              <option value="7:00 PM">7:00 PM</option>
-            </select>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="info-content">
+              <h4>Waktu Operasi</h4>
+              <p>Isnin - Sabtu: 10:00 AM - 8:00 PM<br>
+                 Ahad: 10:00 AM - 6:00 PM</p>
+            </div>
           </div>
           
-          <div class="form-group">
-            <label for="catatan">Catatan Tambahan</label>
-            <textarea id="catatan" name="catatan" rows="4" placeholder="Sebarang maklumat tambahan atau soalan..."></textarea>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4>Email</h4>
+              <p><a href="mailto:info@mizzladyaesthetic.com">info@mizzladyaesthetic.com</a></p>
+            </div>
           </div>
           
-          <button type="submit" class="btn btn-form">
-            <i class="fab fa-whatsapp"></i>
-            Hantar ke WhatsApp
-          </button>
-        </form>
-      </div>
-    </div>
-      
-      <div class="contact-info fade-in">
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="info-content">
-            <h4>Telefon</h4>
-            <p><a href="tel:60182171800">018-2171800</a></p>
-          </div>
-        </div>
-        
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-clock"></i>
-          </div>
-          <div class="info-content">
-            <h4>Waktu Operasi</h4>
-            <p>Isnin - Sabtu: 10:00 AM - 8:00 PM<br>
-               Ahad: 10:00 AM - 6:00 PM</p>
-          </div>
-        </div>
-        
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="info-content">
-            <h4>Email</h4>
-            <p><a href="mailto:info@mizzladyaesthetic.com">info@mizzladyaesthetic.com</a></p>
-          </div>
-        </div>
-        
-        <div class="info-card">
-          <div class="info-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="info-content">
-            <h4>Lokasi</h4>
-            <p>Seremban, Negeri Sembilan<br>
-               <small>*Alamat lengkap akan dikongsikan selepas tempahan</small></p>
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Lokasi</h4>
+              <p>Seremban, Negeri Sembilan<br>
+                 <small>*Alamat lengkap akan dikongsikan selepas tempahan</small></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     
- 
+    <!-- Social Media Section -->
     <div class="contact-social fade-in">
       <h3>Ikuti Kami</h3>
       <div class="social-links">
@@ -166,6 +184,100 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-bottom: 3rem;
+  }
+  
+  /* Booking Form Styles */
+  .booking-form-section {
+    display: flex;
+    align-items: start;
+  }
+  
+  .booking-form-container {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+    width: 100%;
+  }
+  
+  .booking-form-container h3 {
+    color: var(--accent-rose);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .booking-form-container > p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+  }
+  
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-rose);
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .btn-form {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  
+  .btn-form i {
+    margin-right: 10px;
+  }
+  
+  /* Contact Info Section */
+  .contact-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
   .contact-cta {
@@ -259,93 +371,6 @@
     text-decoration: underline;
   }
   
-  /* Booking Form Styles */
-  .booking-form-section {
-    margin: 4rem 0 3rem;
-  }
-  
-  .booking-form-container {
-    background: var(--white);
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px var(--shadow);
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .booking-form-container h3 {
-    color: var(--accent-rose);
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-  }
-  
-  .booking-form-container > p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--text-light);
-  }
-  
-  .booking-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group label {
-    margin-bottom: 0.5rem;
-    color: var(--text-dark);
-    font-weight: 500;
-    font-size: 0.95rem;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 12px 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    font-family: inherit;
-  }
-  
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-rose);
-    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  
-  .btn-form {
-    width: 100%;
-    padding: 18px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-top: 1rem;
-  }
-  
-  .btn-form i {
-    margin-right: 10px;
-  }
-  
   .contact-social {
     text-align: center;
     background: var(--white);
@@ -408,10 +433,6 @@
       gap: 2rem;
     }
     
-    .cta-box {
-      padding: 2rem;
-    }
-    
     .booking-form-container {
       padding: 2rem;
     }
@@ -419,6 +440,10 @@
     .form-row {
       grid-template-columns: 1fr;
       gap: 1rem;
+    }
+    
+    .cta-box {
+      padding: 2rem;
     }
     
     .social-links {
