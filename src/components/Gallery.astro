@@ -11,44 +11,26 @@
     <div class="gallery-grid">
       <div class="gallery-item fade-in">
         <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Facial Treatment" />
-        <div class="gallery-overlay">
-          <h4>Facial Treatment</h4>
-        </div>
       </div>
       
       <div class="gallery-item fade-in">
         <img src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Treatment Room" />
-        <div class="gallery-overlay">
-          <h4>Treatment Room</h4>
-        </div>
       </div>
       
       <div class="gallery-item fade-in">
         <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Spa Bridal" />
-        <div class="gallery-overlay">
-          <h4>Spa Bridal</h4>
-        </div>
       </div>
       
       <div class="gallery-item fade-in">
         <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Relaxation Area" />
-        <div class="gallery-overlay">
-          <h4>Relaxation Area</h4>
-        </div>
       </div>
       
       <div class="gallery-item fade-in">
         <img src="https://images.pexels.com/photos/3985327/pexels-photo-3985327.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Aesthetic Treatment" />
-        <div class="gallery-overlay">
-          <h4>Aesthetic Treatment</h4>
-        </div>
       </div>
       
       <div class="gallery-item fade-in">
         <img src="https://images.pexels.com/photos/7755168/pexels-photo-7755168.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Slimming Program" />
-        <div class="gallery-overlay">
-          <h4>Slimming Program</h4>
-        </div>
       </div>
     </div>
   </div>
@@ -91,28 +73,6 @@
     height: 250px;
     object-fit: cover;
     display: block;
-  }
-  
-  .gallery-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    color: white;
-    padding: 2rem 1.5rem 1.5rem;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
-  }
-  
-  .gallery-overlay h4 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 500;
   }
   
   /* Lightbox Styles */
@@ -202,7 +162,7 @@
     galleryItems.forEach(item => {
       item.addEventListener('click', function() {
         const img = this.querySelector('img');
-        const caption = this.querySelector('h4').textContent;
+        const caption = img.alt;
         
         lightboxImg.src = img.src;
         lightboxCaption.textContent = caption;
