@@ -23,17 +23,6 @@
                 <input type="text" id="nama" name="nama" required>
               </div>
               <div class="form-group">
-                <label for="telefon">No. Telefon *</label>
-                <input type="tel" id="telefon" name="telefon" required>
-              </div>
-            </div>
-            
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-              </div>
-              <div class="form-group">
                 <label for="umur">Umur</label>
                 <input type="number" id="umur" name="umur" min="16" max="80">
               </div>
@@ -131,7 +120,7 @@
             </div>
             <div class="info-content">
               <h4>Email</h4>
-              <p><a href="mailto:info@mizzladyaesthetic.com">info@mizzladyaesthetic.com</a></p>
+              <p><a href="mailto:celebriticantik@gmail.com">celebriticantik@gmail.com</a></p>
             </div>
           </div>
           
@@ -142,7 +131,7 @@
             <div class="info-content">
               <h4>Lokasi</h4>
               <p>No.6A, Jalan Kristal K7/K, Seksyen 7, Shah Alam, Malaysia, 40000<br>
-                 
+                 </p>
             </div>
           </div>
         </div>
@@ -496,7 +485,7 @@
       }
       
       // Validate required fields
-      if (!data.nama || !data.telefon || !data.perkhidmatan) {
+      if (!data.nama || !data.perkhidmatan) {
         alert('Sila isi semua maklumat yang diperlukan (bertanda *)');
         return;
       }
@@ -504,11 +493,6 @@
       // Format WhatsApp message
       let message = `*TEMPAHAN BARU - MIZZLADY AESTHETIC*\n\n`;
       message += `👤 *Nama:* ${data.nama}\n`;
-      message += `📱 *Telefon:* ${data.telefon}\n`;
-      
-      if (data.email) {
-        message += `📧 *Email:* ${data.email}\n`;
-      }
       
       if (data.umur) {
         message += `🎂 *Umur:* ${data.umur} tahun\n`;
