@@ -20,8 +20,11 @@
             <li>Deep Cleansing Facial</li>
             <li>Anti-Aging Treatment</li>
             <li>Hydrating Facial</li>
-            <li>Acne Treatment</li>
+            <li>Brightening Luminous Facial</li>
           </ul>
+          <div class="service-cta">
+            <a href="/facial-treatment" class="btn btn-service">Ketahui Lebih</a>
+          </div>
         </div>
       </div>
       
@@ -38,6 +41,9 @@
             <li>Body Whitening</li>
             <li>Relaxation Massage</li>
           </ul>
+          <div class="service-cta">
+            <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Spa%20Bridal.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank" rel="noopener noreferrer">Tempah Sekarang</a>
+          </div>
         </div>
       </div>
       
@@ -54,6 +60,9 @@
             <li>Cellulite Treatment</li>
             <li>Nutrition Consultation</li>
           </ul>
+          <div class="service-cta">
+            <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Slimming%20Program.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank" rel="noopener noreferrer">Tempah Sekarang</a>
+          </div>
         </div>
       </div>
       
@@ -79,13 +88,16 @@
             <li>Eyelash Perming</li>
             <li>Waxing</li>
           </ul>
+          <div class="service-cta">
+            <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Aesthetic%20Treatment.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank" rel="noopener noreferrer">Tempah Sekarang</a>
+          </div>
         </div>
       </div>
     </div>
     
     <div class="services-cta fade-in">
       <p>Ingin tahu lebih lanjut tentang rawatan yang sesuai untuk anda?</p>
-      <a href="https://wa.me/60182171800" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/60108061350" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i>
         Konsultasi Percuma
       </a>
@@ -113,6 +125,8 @@
     text-align: center;
     transition: all 0.3s ease;
     border: 1px solid rgba(248, 215, 218, 0.3);
+    display: flex;
+    flex-direction: column;
   }
   
   .service-card:hover {
@@ -138,6 +152,12 @@
     filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   }
   
+  .service-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .service-content h3 {
     color: var(--accent-rose);
     margin-bottom: 1rem;
@@ -147,11 +167,14 @@
   .service-content p {
     margin-bottom: 1.5rem;
     text-align: left;
+    flex: 1;
   }
   
   .service-features {
     list-style: none;
     text-align: left;
+    margin-bottom: 2rem;
+    flex: 1;
   }
   
   .service-features li {
@@ -167,6 +190,27 @@
     left: 0;
     color: var(--accent-rose);
     font-weight: bold;
+  }
+  
+  .service-cta {
+    margin-top: auto;
+  }
+  
+  .btn-service {
+    background: linear-gradient(45deg, var(--accent-rose), #ff6b9d);
+    color: white;
+    padding: 12px 25px;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+  }
+  
+  .btn-service:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
   }
   
   .services-cta {

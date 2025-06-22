@@ -9,12 +9,20 @@
       </div>
       
       <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/#home">Home</a></li>
+        <li><a href="/#about">About</a></li>
+        <li class="dropdown">
+          <a href="/#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="/facial-treatment">Facial Treatment</a></li>
+            <li><a href="/#services">Spa Bridal</a></li>
+            <li><a href="/#services">Slimming Program</a></li>
+            <li><a href="/#services">Aesthetic Treatment</a></li>
+          </ul>
+        </li>
+        <li><a href="/#gallery">Gallery</a></li>
+        <li><a href="/#testimonials">Testimonials</a></li>
+        <li><a href="/#contact">Contact</a></li>
       </ul>
       
       <div class="nav-toggle">
@@ -72,6 +80,9 @@
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
   .nav-menu a:hover {
@@ -91,6 +102,67 @@
   
   .nav-menu a:hover::after {
     width: 100%;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown:hover .dropdown-toggle i {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 200px;
+    box-shadow: 0 10px 30px var(--shadow);
+    border-radius: 10px;
+    padding: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    list-style: none;
+    margin: 0;
+    z-index: 1001;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.8rem 1.5rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+  }
+  
+  .dropdown-menu a::after {
+    display: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background: var(--beige);
+    color: var(--accent-rose);
+    padding-left: 2rem;
   }
   
   .nav-toggle {
@@ -124,6 +196,21 @@
     
     .nav-menu.active {
       left: 0;
+    }
+    
+    .dropdown-menu {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      box-shadow: none;
+      background: var(--beige);
+      margin-top: 0.5rem;
+      border-radius: 5px;
+    }
+    
+    .dropdown-menu a:hover {
+      padding-left: 1.5rem;
     }
     
     .nav-toggle {
