@@ -152,7 +152,7 @@ import Footer from '../components/Footer.astro';
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">
-            <i class="fas fa-spa"></i>
+            <img src="https://img.webniaga.my/mizzlady/spa.svg" alt="Spa Bridal Icon" />
           </div>
           <h3>Spa Bridal</h3>
           <p>Pakej istimewa untuk pengantin tampil sempurna</p>
@@ -161,7 +161,7 @@ import Footer from '../components/Footer.astro';
         
         <div class="service-card">
           <div class="service-icon">
-            <i class="fas fa-weight"></i>
+            <img src="https://img.webniaga.my/mizzlady/body-slim.svg" alt="Slimming Program Icon" />
           </div>
           <h3>Slimming Program</h3>
           <p>Program penurunan berat badan yang selamat</p>
@@ -416,6 +416,13 @@ import Footer from '../components/Footer.astro';
     color: white;
     font-size: 1.5rem;
     margin: 0 auto 1.5rem;
+  }
+  
+  .service-card .service-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(100%);
   }
   
   .service-card h3 {
