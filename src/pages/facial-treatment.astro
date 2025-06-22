@@ -17,6 +17,15 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
+  <!-- Service Poster Section -->
+  <section class="service-poster">
+    <div class="container">
+      <div class="poster-container">
+        <img src="https://img.webniaga.my/mizzlady/brightening-luminous-facial-poster.jpg" alt="Brightening Luminous Facial - Mizzlady Aesthetic" />
+      </div>
+    </div>
+  </section>
+
   <!-- Main Content -->
   <section class="facial-content">
     <div class="container">
@@ -192,6 +201,29 @@ import Footer from '../components/Footer.astro';
     color: var(--text-dark);
     font-weight: 500;
     margin: 0;
+  }
+  
+  .service-poster {
+    background: var(--white);
+    padding: 40px 0;
+  }
+  
+  .poster-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .poster-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .poster-container img:hover {
+    transform: scale(1.02);
   }
   
   .facial-content {
@@ -416,6 +448,11 @@ import Footer from '../components/Footer.astro';
       font-size: 1.1rem;
     }
     
+    .poster-container {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    
     .content-grid {
       grid-template-columns: 1fr;
       gap: 2rem;
@@ -437,6 +474,10 @@ import Footer from '../components/Footer.astro';
   @media (max-width: 480px) {
     .page-hero {
       padding: 100px 0 60px;
+    }
+    
+    .service-poster {
+      padding: 20px 0;
     }
     
     .content-card {
