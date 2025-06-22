@@ -132,42 +132,6 @@ import Footer from '../components/Footer.astro';
     </div>
   </section>
 
-  <!-- Before/After Gallery Section -->
-  <section class="gallery-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Hasil Rawatan</h2>
-        <p>Lihat transformasi kulit pelanggan kami</p>
-      </div>
-      
-      <div class="results-gallery">
-        <div class="result-card">
-          <img src="https://img.webniaga.my/mizzlady/facial-before-after-1.jpg" alt="Hasil Facial Treatment 1" />
-          <div class="result-overlay">
-            <h4>Kulit Lebih Cerah</h4>
-            <p>Selepas 3 sesi rawatan</p>
-          </div>
-        </div>
-        
-        <div class="result-card">
-          <img src="https://img.webniaga.my/mizzlady/facial-before-after-2.jpg" alt="Hasil Facial Treatment 2" />
-          <div class="result-overlay">
-            <h4>Pigmentasi Berkurang</h4>
-            <p>Selepas 4 sesi rawatan</p>
-          </div>
-        </div>
-        
-        <div class="result-card">
-          <img src="https://img.webniaga.my/mizzlady/facial-before-after-3.jpg" alt="Hasil Facial Treatment 3" />
-          <div class="result-overlay">
-            <h4>Kulit Glowing</h4>
-            <p>Selepas 2 sesi rawatan</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Related Services -->
   <section class="related-services">
     <div class="container">
@@ -385,55 +349,6 @@ import Footer from '../components/Footer.astro';
     transform: translateY(-2px);
   }
   
-  .gallery-section {
-    background: var(--beige);
-    padding: 80px 0;
-  }
-  
-  .results-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .result-card {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px var(--shadow);
-    transition: transform 0.3s ease;
-  }
-  
-  .result-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .result-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-  
-  .result-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    color: white;
-    padding: 2rem 1.5rem 1.5rem;
-  }
-  
-  .result-overlay h4 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
-  }
-  
-  .result-overlay p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
   .related-services {
     background: var(--white);
     padding: 80px 0;
@@ -512,10 +427,6 @@ import Footer from '../components/Footer.astro';
     
     .cta-card {
       padding: 2rem;
-    }
-    
-    .results-gallery {
-      grid-template-columns: 1fr;
     }
     
     .services-grid {
