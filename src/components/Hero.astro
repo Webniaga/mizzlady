@@ -6,19 +6,13 @@
     <img src="https://img.webniaga.my/mizzlady/mizzladyheader.jpg" alt="Facial Treatment" />
   </div>
   
-  <div class="hero-overlay"></div>
-  
   <div class="hero-content">
     <div class="container">
-      <div class="hero-text fade-in">
-        <h1>Cantik, Berseri & Yakin<br>Bersama <span class="highlight">Mizzlady Aesthetic</span></h1>
-        <p class="hero-subtitle">Pusat Medispa Profesional untuk Facial, Spa Bridal, Slimming dan Servis Aesthetic</p>
-        <div class="hero-cta">
-          <a href="https://wa.me/60108061350" class="btn btn-lg" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-whatsapp"></i>
-            Tempah Sekarang di WhatsApp
-          </a>
-        </div>
+      <div class="hero-cta">
+        <a href="https://wa.me/60108061350" class="btn btn-lg" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp"></i>
+          Tempah Sekarang di WhatsApp
+        </a>
       </div>
     </div>
   </div>
@@ -40,7 +34,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
+    z-index: -1;
   }
   
   .hero-background img {
@@ -50,49 +44,25 @@
     object-position: center;
   }
   
-  
-  
   .hero-content {
     width: 100%;
-  }
-  
-  .hero-text {
-    max-width: 700px;
-    text-align: center;
-    margin: 0 auto;
-  }
-  
-  .hero h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
-  }
-  
-  .highlight {
-    color: var(--accent-rose);
-    background: linear-gradient(45deg, var(--accent-rose), #ff6b9d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.3rem;
-    color: var(--text-light);
-    margin-bottom: 2.5rem;
-    font-weight: 400;
+    position: relative;
+    z-index: 1;
   }
   
   .hero-cta {
-    margin-top: 2rem;
+    text-align: center;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .btn-lg {
     padding: 18px 35px;
     font-size: 1.1rem;
     font-weight: 600;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
   
   .btn i {
@@ -106,12 +76,8 @@
       min-height: 500px;
     }
     
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-      font-size: 1.1rem;
+    .hero-cta {
+      bottom: 60px;
     }
     
     .btn-lg {
@@ -121,12 +87,8 @@
   }
   
   @media (max-width: 480px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-    
-    .hero-subtitle {
-      font-size: 1rem;
+    .hero-cta {
+      bottom: 40px;
     }
   }
 </style>
