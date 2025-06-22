@@ -116,50 +116,54 @@ import Footer from '../components/Footer.astro';
           <button class="btn btn-service" data-modal="nose-thread">Ketahui Lebih</button>
         </div>
 
-        <!-- Other Services (without detailed modals) -->
+        <!-- Botox -->
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-syringe"></i>
           </div>
           <h3>Botox</h3>
           <p>Rawatan untuk mengurangkan kedutan dan garis halus pada wajah.</p>
-          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Botox.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank">Tempah Sekarang</a>
+          <button class="btn btn-service" data-modal="botox-modal">Ketahui Lebih</button>
         </div>
 
+        <!-- Filler -->
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-fill"></i>
           </div>
           <h3>Filler</h3>
           <p>Rawatan untuk mengisi dan membentuk bahagian wajah tertentu.</p>
-          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Filler.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank">Tempah Sekarang</a>
+          <button class="btn btn-service" data-modal="filler-modal">Ketahui Lebih</button>
         </div>
 
+        <!-- Pico Laser -->
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-laser"></i>
           </div>
           <h3>Pico Laser</h3>
           <p>Rawatan laser untuk mengatasi pigmentasi dan mencerahkan kulit.</p>
-          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Pico%20Laser.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank">Tempah Sekarang</a>
+          <button class="btn btn-service" data-modal="pico-laser-modal">Ketahui Lebih</button>
         </div>
 
+        <!-- PRP -->
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-droplet"></i>
           </div>
           <h3>PRP</h3>
           <p>Rawatan regenerasi kulit menggunakan platelet kaya plasma.</p>
-          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20PRP.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank">Tempah Sekarang</a>
+          <button class="btn btn-service" data-modal="prp-facial-modal">Ketahui Lebih</button>
         </div>
 
+        <!-- Waxing -->
         <div class="service-card">
           <div class="service-icon">
             <i class="fas fa-spa"></i>
           </div>
           <h3>Waxing</h3>
           <p>Rawatan pembuangan bulu yang bersih dan tahan lama.</p>
-          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Waxing.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-service" target="_blank">Tempah Sekarang</a>
+          <button class="btn btn-service" data-modal="waxing-modal">Ketahui Lebih</button>
         </div>
       </div>
     </div>
@@ -703,6 +707,331 @@ import Footer from '../components/Footer.astro';
     </div>
   </div>
 
+  <!-- Botox Modal -->
+  <div id="botox-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h2>Botox Treatment</h2>
+        <p>Mengurangkan garis senyum dan memberikan wajah tampilan yang lebih segar</p>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Kelebihan Botox:</h3>
+          <ul class="feature-list">
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              BOTOX diaplikasikan secara tepat untuk mengurangkan garis senyum yang terlalu menonjol
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Hasil yang cepat dan langsung - perubahan nyata dalam beberapa hari
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Tanpa pembedahan - pilihan yang lebih selamat dan nyaman
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Aplikasi yang tepat oleh profesional berpengalaman
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Peningkatan keselesaan emosi dan fisik dengan keyakinan yang lebih besar
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Botox%20Treatment.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Tempah Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filler Modal -->
+  <div id="filler-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h2>Filler Treatment</h2>
+        <p>Rawatan untuk mengisi dan membentuk bahagian wajah tertentu</p>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Kebaikan Filler:</h3>
+          <ul class="feature-list">
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Mengisi dan membentuk bahagian wajah yang diinginkan
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Hasil segera yang boleh dilihat selepas rawatan
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Rawatan yang selamat dan berkesan
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Dilakukan oleh profesional berpengalaman
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Filler%20Treatment.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Tempah Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pico Laser Modal -->
+  <div id="pico-laser-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h2>Pico Laser</h2>
+        <p>Rawatan revolusioner dengan teknologi laser berdenyut ultra pendek</p>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Tentang Pico Laser:</h3>
+          <p>Pico Laser adalah rawatan revolusioner yang menggunakan teknologi laser berdenyut ultra pendek untuk merawat pelbagai masalah kulit dengan selamat dan berkesan. Rawatan ini sesuai untuk anda yang inginkan penyelesaian cepat dan tidak invasif bagi masalah seperti pigmentasi, jeragat, kedutan halus, parut, serta tanda penuaan.</p>
+          
+          <p>Dengan teknologi terkini, Pico Laser memberikan hasil yang lebih baik dengan masa pemulihan yang minimum. Kelebihan Pico Laser adalah keupayaannya untuk memecahkan pigmen atau melanin di bawah kulit dengan lebih tepat tanpa merosakkan tisu sekeliling.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Kelebihan Pico Laser:</h3>
+          <ul class="feature-list">
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Merawat pigmentasi, jeragat, dan melasma
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Mengurangkan parut jerawat dan tanda penuaan
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Memudarkan tatu dengan lebih berkesan
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Masa pemulihan yang cepat dengan kesan sampingan minimum
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Sesuai untuk semua jenis kulit
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Pico%20Laser.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Tempah Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRP Facial Modal -->
+  <div id="prp-facial-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h2>PRP Facial</h2>
+        <p>Rawatan kecantikan yang menggabungkan microneedling dengan Platelet-Rich Plasma</p>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Tentang PRP Facial:</h3>
+          <p>PRP Facial adalah rawatan kecantikan yang menggabungkan teknik microneedling dengan penggunaan Platelet-Rich Plasma (PRP) yang diekstrak dari darah pesakit sendiri. Rawatan ini dinamakan "Vampire Facial" kerana penggunaan darah dalam prosesnya.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Proses PRP Facial:</h3>
+          <div class="process-steps">
+            <div class="step-card">
+              <h4>1. Pengambilan Darah</h4>
+              <p>Darah diambil dari lengan pesakit, seperti dalam ujian darah biasa.</p>
+            </div>
+            <div class="step-card">
+              <h4>2. Pemprosesan PRP</h4>
+              <p>Darah dimasukkan ke dalam mesin sentrifuge yang memisahkan plasma kaya platelet (PRP) dari komponen darah lain.</p>
+            </div>
+            <div class="step-card">
+              <h4>3. Microneedling</h4>
+              <p>Rawatan microneedling dilakukan pada kulit wajah dengan jarum halus yang mencipta tusukan mikro.</p>
+            </div>
+            <div class="step-card">
+              <h4>4. Aplikasi PRP</h4>
+              <p>PRP kemudian disapu atau disuntik ke dalam kulit yang telah dirawat dengan microneedling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3>Kebaikan PRP Facial:</h3>
+          <ul class="feature-list">
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Mengurangkan garis halus dan kedutan
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Membaiki tekstur kulit dan mengurangkan liang pori besar
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Meningkatkan keanjalan dan kekenyalan kulit
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Meremajakan kulit kusam dengan penampilan yang lebih cerah
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Mengurangkan parut jerawat
+            </li>
+            <li>
+              <svg class="tick-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Memperbaiki warna kulit dan memberikan kesan bercahaya
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-cta">
+          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20PRP%20Facial.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Tempah Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Waxing Modal -->
+  <div id="waxing-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <h2>Waxing Treatment</h2>
+        <p>Penjagaan kulit licin dan bebas bulu</p>
+      </div>
+      
+      <div class="modal-body">
+        <div class="modal-section">
+          <h3>Tentang Waxing Treatment:</h3>
+          <p>Dapatkan kulit yang licin dan bersih dengan Waxing Treatment kami yang selamat dan berkesan. Kami menawarkan pelbagai pilihan rawatan waxing untuk memenuhi keperluan anda, dari kawasan kecil seperti kening hingga rawatan penuh seluruh badan. Waxing adalah cara yang ideal untuk menanggalkan bulu dengan hasil yang lebih tahan lama berbanding pencukuran biasa.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3>Pilihan Waxing Treatment:</h3>
+          <div class="waxing-options">
+            <div class="waxing-card">
+              <h4>Full Face</h4>
+              <p>Rawatan waxing untuk keseluruhan wajah, termasuk dahi, pipi, dagu, dan rahang.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Eye Brows</h4>
+              <p>Rawatan untuk membentuk kening dengan sempurna dan teratur.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Upper Lips</h4>
+              <p>Waxing lembut untuk menanggalkan bulu halus di kawasan atas bibir.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Under Arms</h4>
+              <p>Dapatkan ketiak yang licin dan bebas bulu dengan hasil tahan lama.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Full Body</h4>
+              <p>Rawatan waxing menyeluruh dari kepala hingga kaki.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Half Arm / Full Arm</h4>
+              <p>Waxing untuk separuh atau seluruh lengan yang licin dan bersih.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Half Leg / Full Leg</h4>
+              <p>Rawatan untuk separuh atau seluruh kaki yang halus dan licin.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Brazilian</h4>
+              <p>Brazilian waxing untuk kawasan intim dengan kebersihan maksimum.</p>
+            </div>
+            <div class="waxing-card">
+              <h4>Bikini Line</h4>
+              <p>Waxing di sekitar garis bikini untuk penampilan yang kemas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-cta">
+          <a href="https://wa.me/60108061350?text=Saya%20berminat%20dengan%20Waxing%20Treatment.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F" class="btn btn-primary" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Tempah Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <Footer />
 </Layout>
 
@@ -1006,6 +1335,63 @@ import Footer from '../components/Footer.astro';
     margin: 0;
   }
   
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .step-card {
+    background: var(--beige);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    border-left: 4px solid var(--accent-rose);
+  }
+  
+  .step-card h4 {
+    color: var(--accent-rose);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .step-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .waxing-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .waxing-card {
+    background: var(--beige);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    border-left: 4px solid var(--accent-rose);
+    transition: transform 0.3s ease;
+  }
+  
+  .waxing-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .waxing-card h4 {
+    color: var(--accent-rose);
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .waxing-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
   .modal-cta {
     text-align: center;
     padding-top: 1.5rem;
@@ -1073,6 +1459,14 @@ import Footer from '../components/Footer.astro';
     }
     
     .benefit-list {
+      grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+      grid-template-columns: 1fr;
+    }
+    
+    .waxing-options {
       grid-template-columns: 1fr;
     }
   }
